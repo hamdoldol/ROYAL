@@ -1,2 +1,2 @@
 # ROYAL
-this programing language
+this is programing language
