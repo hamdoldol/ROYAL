@@ -1,2 +1,1 @@
-# ROYAL
-this is programing language
+this llm gpt
