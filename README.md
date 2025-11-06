@@ -1,14 +1,36 @@
-# 소계
-국내(?)최초 하나도 난해하지않은 프로그래밍언어
-# 문법
-핼로월드
+# information
+This project is coin
+This simbol is ryl
+# promports
+---This operate is terminal---
 
+mining is
 
-#iclude std;
+```
+mining
+```
+mining stop is 
 
-main
-{
-print("헬로월드"); @이건주석
-}
+```
+mining_stop
+```
+sell ryl is
 
+```
+sell(ryls)
+```
+
+This
+buy ryl is
+
+```
+buy(ryls)
+```
+
+# tips
+This project is prototype
+
+# home page is...
+~making~ not
+# LICENSES 
 MIT LICENSE
