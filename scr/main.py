@@ -1,11 +1,17 @@
 import mining
+import sell_and_buy
 
+def promport():
+    input("1.mining 2.sell 3.buy 4.exit")
 def main():
-    promport = input("1.mining 2.sell 3.buy: ")
     if promport == "mining":
-        hashes = mining.mining()  # 함수 끝날 때까지 기다림
-        print("채굴 결과:", hashes)
-        input("채굴이 끝났습니다. Enter를 눌러 종료하세요: ")
-
-
-main()
+        hashes = mining.mining()
+        promport()
+    elif promport == "sell":
+        sell_and_buy.sell()
+    elif promport == "buy":
+        sell_and_buy.buy()
+    elif promport == "exit":
+        exit('byebye')
+if __name__ == "__main__": 
+    main()

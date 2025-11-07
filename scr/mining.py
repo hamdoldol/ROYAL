@@ -13,8 +13,6 @@ def mining():
             print("mining hash! hash is", plus)
             hashs.append(plus)
             print("Mining complete! Hash list:", hashs)
-            break  # 해시를 찾았으니 반복 종료
+            break 
 
         time.sleep(0.1)  # CPU 점유율 낮추기
-
-    return hashs
