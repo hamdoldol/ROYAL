@@ -1,8 +1,6 @@
 import mining
 
+promport = input("1.mining 2.sell 3.buy")
 def main():
-    promport = input("1.mining 2.sell 3.buy")
-    if promport == 1 or mining :
+    if promport == "1" or promport == "mining":
         mining.mining()
-
-main()

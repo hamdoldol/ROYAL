@@ -1,9 +1,9 @@
 import random
 import time
+import main
 
 def mining():
     hashs = []
-        
     while True:
         ran1 = random.randrange(1, 1000000)
         ran2 = random.randrange(1, 1000000)
@@ -20,6 +20,5 @@ def mining():
                 time.sleep(0.1)  # CPU 점유율 너무 높지 않게 잠깐 쉬기                                                                                                               
                 print("Mining complete! Hash list:", hash)
                 hashs =+ plus
-             
-mining()
-                                                                        
+if __name__ == "__main__":
+    main.main()
