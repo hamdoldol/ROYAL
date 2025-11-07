@@ -1,6 +1,5 @@
 import random
 import time
-import main
 
 def mining():
     hashs = []
@@ -8,17 +7,14 @@ def mining():
         ran1 = random.randrange(1, 1000000)
         ran2 = random.randrange(1, 1000000)
         plus = ran1 + ran2
-        main = random.randrange(1, 2000000)
-                                                    
-        if plus == main:
-            if hash == plus:
-                pass
-            else:
-                print("mining hash! hash is", plus)
-                hashs.append(plus)
-                break  # 해시를 찾았으니 반복 종료
-                time.sleep(0.1)  # CPU 점유율 너무 높지 않게 잠깐 쉬기                                                                                                               
-                print("Mining complete! Hash list:", hash)
-                hashs =+ plus
-if __name__ == "__main__":
-    main.main()
+        goal = random.randrange(1, 2000000)
+
+        if plus == goal:
+            print("mining hash! hash is", plus)
+            hashs.append(plus)
+            print("Mining complete! Hash list:", hashs)
+            break  # 해시를 찾았으니 반복 종료
+
+        time.sleep(0.1)  # CPU 점유율 낮추기
+
+    return hashs
