@@ -25,3 +25,14 @@ def up_ryl(ryl):
     ryl += ryl
 def down_ryl(ryl):
     ryl -= ryl
+def main_ryl():
+    if sell == True:
+        doun_ryl(100)
+    elif buy == True:
+        up_ryl(100)
+    return up_ryl - down_ryl
+def up_or_down_ryl():
+    if sell == True:
+        print("RYL is 1%down")
+    elif buy == True:
+        print("RYL is 1%up")
