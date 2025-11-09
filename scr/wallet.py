@@ -1,3 +1,16 @@
 def my_wallet():
-    my_money = int(input("Enter the amount of money in your wallet: "))
-    my_ryl = 0
+    money = 0
+    ryl = 0
+    print("your money is", money)
+    print("your RYL is", ryl)
+    input("input my money")
+    print(money)
+def join():
+    password = ""
+    ID = ""
+    if ID == False or password == False:
+        ID =+ input("input ID")
+        password += input("input password")
+        print("welcome", ID)
+    else:
+        print('come back again', ID)

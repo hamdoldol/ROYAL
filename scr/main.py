@@ -16,7 +16,11 @@ def main():
         sell_and_buy.buy()
         promport()
     elif promport == "view my wallet":
-        wallet.my_walletw()
+        if wallet.my_wallet == False:
+            print("please sign in first")
+            wallet.join()
+        else:
+            wallet.my_wallet()
         promport()
     elif promport == "view coin":
         print(sell_and_buy.main_ryl())
@@ -24,5 +28,6 @@ def main():
         promport()
     elif promport == "exit":
         exit('bye bye')
+        
 if __name__ == "__main__": 
     main()
